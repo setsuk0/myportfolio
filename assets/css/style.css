@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+}
+.Header-style {
+background-color: rgb(100, 5, 189);   
+display: flex;
+justify-content: space-around;
+height: 90; /*height of the purple part*/
+font-family: "Helvetica";
+color:rgb(231, 82, 245);
+text-shadow: 0px 7px 10px rgb(105, 215, 235)
+}
+
+/* Adds bouncing animation to H1 :)*/
+.bounce {
+    animation: bounce 2s ease-in-out infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5; /*position for navlinks*/
+}
+
+nav ul li a:hover {
+    color: hotpink;
+}
+
+nav li {
+    margin: 0 10px 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(123, 204, 241);
+    font-size: 23;
+}
+
+/*this will center content on the screen*/ 
+main {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Helvetica";
+    color:rgb(166, 48, 202);
+}
+
+#profilepic {
+    height: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(90, 0, 126) solid 10px;
+    border-radius: 35px;
+    box-shadow: 10px 10px 15px rgb(241, 65, 247);
+}
+
+#prof-position {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+#About-Me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2%;
+}
+
+#Work {
+ margin: 2%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+
+#Contact-me {
+margin: 2%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+}
+
+/*about me box*/
+#container1 {
+    max-width: 600px;
+    line-height: 20px;
+    margin: 0 auto;
+    border: 5px solid rgb(19, 153, 187);
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgb(210, 78, 236); /*changes about me box shadow*/
+    font-family: "Helvetica";
+    font-weight: 800; /*changes boldness of about me text*/
+
+}
+
+/*author's kitty cat*/
+#container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 550px;
+    width: 500px;
+    height: auto;
+   
+
+}
+
+
+/*adding mouseover shadows*/
+.img2:hover {
+    box-shadow: 0 0 10px #ff6fff, 0 0 20px #ff6fff, 0 0 30px #ff6fff, 0 0 40px #ff6fff; ;
+}
+
+.img3:hover {
+    box-shadow: 0 0 10px #ff6fff, 0 0 20px #ff6fff, 0 0 30px #ff6fff, 0 0 40px #ff6fff; ;
+}
+
+.img4:hover {
+    box-shadow: 0 0 10px #ff6fff, 0 0 20px #ff6fff, 0 0 30px #ff6fff, 0 0 40px #ff6fff; ;
+}
+
+.img5:hover {
+    box-shadow: 0 0 10px #ff6fff, 0 0 20px #ff6fff, 0 0 30px #ff6fff, 0 0 40px #ff6fff; ;
+}
+
+#img1 {
+    border:rgb(47, 205, 245) outset 7px;
+    max-width: 550;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.img2 {
+   width: 45%;
+   height: auto;
+}
+
+.img3 {
+    width: 45%;
+    height: auto;
+}
+
+.img4 {
+    width: 45%;
+    height: auto;
+}
+
+.img5{
+    width: 45%;
+    height: auto;
+
+}
+
+.img2, .img3, .img4, .img5 {
+    
+   margin: 7px; 
+   border-radius: 25px;
+   border:rgb(101, 1, 148) solid 5px;
+}
+
+.link1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.my-links {
+    font-size: 20px;
+    font-family: "Helvetica";
+    padding: 40px;
+    color:rgb(186, 5, 192);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#Contact-Me h2 {
+    margin-top: 0;
+
+}
+
+body {
+    background-color: rgba(142, 59, 163, 0.603);
+}
+/*fixes img1 to not bleed to the left on a mobile browser*/
+@media screen and (max-width: 768px) { 
+    #img1 {
+        width: 350px;
+        height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        .img2, .img3, .img4, .img5 {
+          
+          width: 160px;
+        }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-top: 25px;
+    }
+
+    .Header-style {
+        width: 460px;
+    }
+    
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    nav {
+      margin-top: 10px; 
+    }
+  }
+}
